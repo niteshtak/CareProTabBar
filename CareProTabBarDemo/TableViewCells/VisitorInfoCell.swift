@@ -11,5 +11,6 @@ import UIKit
 
 class VisitorInfoCell: UITableViewCell {
 
+    @IBOutlet weak var visitorAvatar: UIImageView!
 
 }

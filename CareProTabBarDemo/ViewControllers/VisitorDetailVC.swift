@@ -10,7 +10,10 @@ import UIKit
 
 
 class VisitoDetailVC: UITableViewController {
-    
+
+    var isAssignmentPerformed = false
+    var visitorInfoCellIndexPath: IndexPath!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Visit"
@@ -33,14 +36,34 @@ class VisitoDetailVC: UITableViewController {
         editButton.frame = CGRect(x: 0, y: 0, width: 60, height: 30)
         editButton.setTitle("Edit", for: .normal)
         editButton.setTitleColor(UIColor(netHex: 0xCAA640), for: .normal)
+        editButton.addTarget(self, action: #selector(changeAssignmentState(button:)), for: .touchUpInside)
         let item1 = UIBarButtonItem(customView: editButton)
 
         self.navigationItem.setRightBarButtonItems([item1], animated: true)
     }
 
+    //MARK: IBAction functions
+    func changeAssignmentState(button: UIButton) {
+        if isAssignmentPerformed {
+            isAssignmentPerformed = false
+            changeDefaultAvatar()
+            return
+        }
 
-    //MARK : TableView delegates and datasource 
+        isAssignmentPerformed = true
+        changeDefaultAvatar()
 
+    }
+
+    func changeDefaultAvatar() {
+        if (visitorInfoCellIndexPath != nil) {
+            DispatchQueue.main.async {
+                self.tableView.reloadRows(at: [self.visitorInfoCellIndexPath], with: .none)
+            }
+        }
+    }
+
+    //MARK : TableView delegates and datasource
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -56,7 +79,7 @@ class VisitoDetailVC: UITableViewController {
         if section == 0 {
             return 1.0
         }
-        return 30
+        return 40
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -64,6 +87,11 @@ class VisitoDetailVC: UITableViewController {
         switch indexPath.section {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "visitorInfoCell", for: indexPath) as? VisitorInfoCell else { fatalError("Could not create cell") }
+            visitorInfoCellIndexPath = indexPath
+            cell.visitorAvatar.image = UIImage(named:"default_avatar")!
+            if isAssignmentPerformed {
+                cell.visitorAvatar.image = UIImage(named:"avatar")!
+            }
             return cell
         case 1:
             switch indexPath.row {

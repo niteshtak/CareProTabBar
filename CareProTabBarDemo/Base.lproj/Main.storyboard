@@ -203,6 +203,9 @@
                                         <constraint firstItem="WkN-HA-4t7" firstAttribute="top" secondItem="01A-lM-DL2" secondAttribute="bottom" constant="-3" id="vc9-fi-dWH"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="visitorAvatar" destination="zr7-0P-w5I" id="DgQ-Eu-Mbk"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="visitorScheduleCell" rowHeight="101" id="jTA-Ts-czi" customClass="VisitorScheduleCell" customModule="CareProTabBarDemo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="146" width="375" height="101"/>
@@ -379,7 +382,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fx-I9-0G5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3541.5999999999999" y="-715.59220389805103"/>
+            <point key="canvasLocation" x="3799" y="-715"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
