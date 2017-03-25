@@ -40,6 +40,7 @@ class VisitoDetailVC: UITableViewController {
         let item1 = UIBarButtonItem(customView: editButton)
 
         self.navigationItem.setRightBarButtonItems([item1], animated: true)
+        navigationController?.navigationBar.tintColor = UIColor(netHex: 0xCAA640)
     }
 
     //MARK: IBAction functions

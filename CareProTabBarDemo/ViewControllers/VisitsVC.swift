@@ -28,6 +28,7 @@ class VisitsVC: UIViewController  {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let backItem = UIBarButtonItem()
         backItem.title = ""
+        backItem.tintColor = UIColor(netHex: 0xCAA640)
         navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
     }
 
