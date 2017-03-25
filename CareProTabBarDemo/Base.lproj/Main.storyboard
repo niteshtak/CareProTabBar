@@ -156,7 +156,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipient_tab_icon" translatesAutoresizingMaskIntoConstraints="NO" id="yaP-IY-1ru">
-                                            <rect key="frame" x="14" y="16" width="35" height="35"/>
+                                            <rect key="frame" x="14" y="20" width="35" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="35" id="JWH-uF-see"/>
                                                 <constraint firstAttribute="height" constant="35" id="bNP-Ho-nAG"/>
@@ -197,10 +197,10 @@
                                         <constraint firstItem="WkN-HA-4t7" firstAttribute="leading" secondItem="yaP-IY-1ru" secondAttribute="trailing" constant="8" id="Poa-VX-XUw"/>
                                         <constraint firstItem="01A-lM-DL2" firstAttribute="leading" secondItem="yaP-IY-1ru" secondAttribute="trailing" constant="8" id="S4k-cR-nkd"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="zr7-0P-w5I" secondAttribute="trailing" constant="11" id="XYA-8I-wiF"/>
-                                        <constraint firstItem="yaP-IY-1ru" firstAttribute="top" secondItem="dMy-8Z-bdV" secondAttribute="topMargin" constant="8" id="Ywo-Zu-QJZ"/>
-                                        <constraint firstItem="01A-lM-DL2" firstAttribute="top" secondItem="dMy-8Z-bdV" secondAttribute="topMargin" constant="8" id="ZgJ-ND-bUA"/>
+                                        <constraint firstItem="yaP-IY-1ru" firstAttribute="top" secondItem="dMy-8Z-bdV" secondAttribute="topMargin" constant="12" id="Ywo-Zu-QJZ"/>
+                                        <constraint firstItem="01A-lM-DL2" firstAttribute="top" secondItem="dMy-8Z-bdV" secondAttribute="topMargin" constant="12" id="ZgJ-ND-bUA"/>
                                         <constraint firstItem="45R-A7-aBm" firstAttribute="centerY" secondItem="zr7-0P-w5I" secondAttribute="centerY" id="q8f-Qi-bh0"/>
-                                        <constraint firstItem="WkN-HA-4t7" firstAttribute="top" secondItem="01A-lM-DL2" secondAttribute="bottom" constant="-3" id="vc9-fi-dWH"/>
+                                        <constraint firstItem="WkN-HA-4t7" firstAttribute="top" secondItem="01A-lM-DL2" secondAttribute="bottom" constant="1" id="vc9-fi-dWH"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
