@@ -1,14 +1,14 @@
 //
-//  FirstViewController.swift
+//  SettingsVC.swift
 //  CareProTabBarDemo
 //
-//  Created by Nitesh Tak on 23/03/2017.
+//  Created by Nitesh Tak on 25/03/2017.
 //  Copyright © 2017 Nitesh. All rights reserved.
 //
 
 import UIKit
 
-class GetCareVC: UIViewController {
+class SettingsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,5 @@ class GetCareVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
-

@@ -98,13 +98,74 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="guH-F5-wJn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="visitorItemCell" rowHeight="60" id="ssW-pl-4AK">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ssW-pl-4AK" id="SyB-7O-eTY">
+                                            <rect key="frame" x="0.0" y="0.0" width="308" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="918-cC-7df" kind="push" identifier="showVisitorDetail" trigger="accessoryAction" id="FWD-qQ-JDR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="XZb-uj-ZmX"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="VJs-og-zJ5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="guH-F5-wJn" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Vmg-rj-MDU"/>
+                            <constraint firstAttribute="trailing" secondItem="guH-F5-wJn" secondAttribute="trailing" id="ga1-li-hqL"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="guH-F5-wJn" secondAttribute="bottom" id="pVE-df-ESl"/>
+                            <constraint firstItem="guH-F5-wJn" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="vpr-Ec-gY7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ACV-Fb-XIT"/>
+                    <connections>
+                        <outlet property="visitRequestsTableView" destination="guH-F5-wJn" id="ZX1-oJ-rdg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2720.8000000000002" y="-714.69265367316348"/>
+        </scene>
+        <!--Visito DetailVC-->
+        <scene sceneID="3ak-sc-CXD">
+            <objects>
+                <tableViewController storyboardIdentifier="visitorDetailVC" id="918-cC-7df" customClass="VisitoDetailVC" customModule="CareProTabBarDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="AAv-Lz-sKM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Rg7-Gt-HWq">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rg7-Gt-HWq" id="dMy-8Z-bdV">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="918-cC-7df" id="CvR-0g-JVd"/>
+                            <outlet property="delegate" destination="918-cC-7df" id="xP5-GI-MxD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="mBB-HR-lET"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1fx-I9-0G5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3542" y="-715"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
