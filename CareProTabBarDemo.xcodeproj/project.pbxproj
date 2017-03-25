@@ -18,6 +18,12 @@
 		A3468E641E865D7700F38D1A /* GetCareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E611E865D7700F38D1A /* GetCareVC.swift */; };
 		A3468E661E86629000F38D1A /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E651E86629000F38D1A /* SettingsVC.swift */; };
 		A3468E681E868C7500F38D1A /* VisitorDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E671E868C7500F38D1A /* VisitorDetailVC.swift */; };
+		A3468E6B1E86939500F38D1A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E6A1E86939500F38D1A /* Extensions.swift */; };
+		A3468E6E1E869DCE00F38D1A /* VisitorInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E6D1E869DCE00F38D1A /* VisitorInfoCell.swift */; };
+		A3468E701E86B17E00F38D1A /* VisitorScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E6F1E86B17D00F38D1A /* VisitorScheduleCell.swift */; };
+		A3468E721E86B19900F38D1A /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E711E86B19900F38D1A /* LocationCell.swift */; };
+		A3468E741E86B1B000F38D1A /* InstructionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E731E86B1B000F38D1A /* InstructionCell.swift */; };
+		A3468E761E86B1BF00F38D1A /* BillingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E751E86B1BF00F38D1A /* BillingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,12 @@
 		A3468E611E865D7700F38D1A /* GetCareVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetCareVC.swift; path = ViewControllers/GetCareVC.swift; sourceTree = "<group>"; };
 		A3468E651E86629000F38D1A /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsVC.swift; path = ViewControllers/SettingsVC.swift; sourceTree = "<group>"; };
 		A3468E671E868C7500F38D1A /* VisitorDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisitorDetailVC.swift; path = ViewControllers/VisitorDetailVC.swift; sourceTree = "<group>"; };
+		A3468E6A1E86939500F38D1A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Extensions/Extensions.swift; sourceTree = "<group>"; };
+		A3468E6D1E869DCE00F38D1A /* VisitorInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisitorInfoCell.swift; path = TableViewCells/VisitorInfoCell.swift; sourceTree = "<group>"; };
+		A3468E6F1E86B17D00F38D1A /* VisitorScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisitorScheduleCell.swift; path = TableViewCells/VisitorScheduleCell.swift; sourceTree = "<group>"; };
+		A3468E711E86B19900F38D1A /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationCell.swift; path = TableViewCells/LocationCell.swift; sourceTree = "<group>"; };
+		A3468E731E86B1B000F38D1A /* InstructionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstructionCell.swift; path = TableViewCells/InstructionCell.swift; sourceTree = "<group>"; };
+		A3468E751E86B1BF00F38D1A /* BillingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BillingCell.swift; path = TableViewCells/BillingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,7 @@
 		A3468E2B1E82E3B800F38D1A /* CareProTabBarDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A3468E691E86937100F38D1A /* Extensions */,
 				A3468E5E1E865D6300F38D1A /* ViewControllers */,
 				A3468E2C1E82E3B800F38D1A /* AppDelegate.swift */,
 				A3468E321E82E3B800F38D1A /* Main.storyboard */,
@@ -136,6 +149,7 @@
 		A3468E5E1E865D6300F38D1A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A3468E6C1E869DAA00F38D1A /* TableViewCells */,
 				A3468E5F1E865D7700F38D1A /* VisitsVC.swift */,
 				A3468E601E865D7700F38D1A /* RecipientsVC.swift */,
 				A3468E611E865D7700F38D1A /* GetCareVC.swift */,
@@ -143,6 +157,26 @@
 				A3468E671E868C7500F38D1A /* VisitorDetailVC.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A3468E691E86937100F38D1A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A3468E6A1E86939500F38D1A /* Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A3468E6C1E869DAA00F38D1A /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A3468E6D1E869DCE00F38D1A /* VisitorInfoCell.swift */,
+				A3468E6F1E86B17D00F38D1A /* VisitorScheduleCell.swift */,
+				A3468E711E86B19900F38D1A /* LocationCell.swift */,
+				A3468E731E86B1B000F38D1A /* InstructionCell.swift */,
+				A3468E751E86B1BF00F38D1A /* BillingCell.swift */,
+			);
+			name = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,8 +320,14 @@
 				A3468E621E865D7700F38D1A /* VisitsVC.swift in Sources */,
 				A3468E641E865D7700F38D1A /* GetCareVC.swift in Sources */,
 				A3468E2D1E82E3B800F38D1A /* AppDelegate.swift in Sources */,
+				A3468E741E86B1B000F38D1A /* InstructionCell.swift in Sources */,
+				A3468E6E1E869DCE00F38D1A /* VisitorInfoCell.swift in Sources */,
+				A3468E701E86B17E00F38D1A /* VisitorScheduleCell.swift in Sources */,
+				A3468E721E86B19900F38D1A /* LocationCell.swift in Sources */,
 				A3468E681E868C7500F38D1A /* VisitorDetailVC.swift in Sources */,
+				A3468E761E86B1BF00F38D1A /* BillingCell.swift in Sources */,
 				A3468E661E86629000F38D1A /* SettingsVC.swift in Sources */,
+				A3468E6B1E86939500F38D1A /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

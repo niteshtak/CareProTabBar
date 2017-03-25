@@ -22,7 +22,7 @@ class VisitsVC: UIViewController  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Visitor's List"
+        self.title = "Visits"
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -63,9 +63,6 @@ extension VisitsVC: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let visitorDetailVC = storyboard.instantiateViewController(withIdentifier: "visitorDetailVC") as! VisitoDetailVC
-//        self.navigationController?.pushViewController(visitorDetailVC, animated: true)
         self.performSegue(withIdentifier: "showVisitorDetail", sender: self)
     }
 }
