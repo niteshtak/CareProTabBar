@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A3468E2D1E82E3B800F38D1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E2C1E82E3B800F38D1A /* AppDelegate.swift */; };
-		A3468E2F1E82E3B800F38D1A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E2E1E82E3B800F38D1A /* FirstViewController.swift */; };
-		A3468E311E82E3B800F38D1A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E301E82E3B800F38D1A /* SecondViewController.swift */; };
+		A3468E2F1E82E3B800F38D1A /* GetCareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E2E1E82E3B800F38D1A /* GetCareVC.swift */; };
+		A3468E311E82E3B800F38D1A /* VisitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E301E82E3B800F38D1A /* VisitsVC.swift */; };
 		A3468E341E82E3B800F38D1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3468E321E82E3B800F38D1A /* Main.storyboard */; };
 		A3468E361E82E3B800F38D1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3468E351E82E3B800F38D1A /* Assets.xcassets */; };
 		A3468E391E82E3B800F38D1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3468E371E82E3B800F38D1A /* LaunchScreen.storyboard */; };
 		A3468E441E82E3B900F38D1A /* CareProTabBarDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E431E82E3B900F38D1A /* CareProTabBarDemoTests.swift */; };
 		A3468E4F1E82E3B900F38D1A /* CareProTabBarDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E4E1E82E3B900F38D1A /* CareProTabBarDemoUITests.swift */; };
+		A3468E5D1E865D0700F38D1A /* RecipientsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3468E5C1E865D0700F38D1A /* RecipientsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,8 @@
 /* Begin PBXFileReference section */
 		A3468E291E82E3B800F38D1A /* CareProTabBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareProTabBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3468E2C1E82E3B800F38D1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3468E2E1E82E3B800F38D1A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A3468E301E82E3B800F38D1A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A3468E2E1E82E3B800F38D1A /* GetCareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCareVC.swift; sourceTree = "<group>"; };
+		A3468E301E82E3B800F38D1A /* VisitsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitsVC.swift; sourceTree = "<group>"; };
 		A3468E331E82E3B800F38D1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3468E351E82E3B800F38D1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3468E381E82E3B800F38D1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		A3468E4A1E82E3B900F38D1A /* CareProTabBarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareProTabBarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3468E4E1E82E3B900F38D1A /* CareProTabBarDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareProTabBarDemoUITests.swift; sourceTree = "<group>"; };
 		A3468E501E82E3B900F38D1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3468E5C1E865D0700F38D1A /* RecipientsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipientsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				A3468E2C1E82E3B800F38D1A /* AppDelegate.swift */,
-				A3468E2E1E82E3B800F38D1A /* FirstViewController.swift */,
-				A3468E301E82E3B800F38D1A /* SecondViewController.swift */,
+				A3468E2E1E82E3B800F38D1A /* GetCareVC.swift */,
+				A3468E301E82E3B800F38D1A /* VisitsVC.swift */,
 				A3468E321E82E3B800F38D1A /* Main.storyboard */,
 				A3468E351E82E3B800F38D1A /* Assets.xcassets */,
 				A3468E371E82E3B800F38D1A /* LaunchScreen.storyboard */,
 				A3468E3A1E82E3B800F38D1A /* Info.plist */,
+				A3468E5C1E865D0700F38D1A /* RecipientsVC.swift */,
 			);
 			path = CareProTabBarDemo;
 			sourceTree = "<group>";
@@ -265,9 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3468E311E82E3B800F38D1A /* SecondViewController.swift in Sources */,
+				A3468E5D1E865D0700F38D1A /* RecipientsVC.swift in Sources */,
+				A3468E311E82E3B800F38D1A /* VisitsVC.swift in Sources */,
 				A3468E2D1E82E3B800F38D1A /* AppDelegate.swift in Sources */,
-				A3468E2F1E82E3B800F38D1A /* FirstViewController.swift in Sources */,
+				A3468E2F1E82E3B800F38D1A /* GetCareVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
